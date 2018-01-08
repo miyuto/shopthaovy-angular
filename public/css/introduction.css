@@ -1,0 +1,78 @@
+.introduction-page{
+    min-height: 350px;
+}
+.introduction-page .menu-about h3{
+    border-left: 5px solid #70ba28;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #333333;
+    margin: 0;
+}
+.introduction-page .menu-about h3 span{
+    font-size: 17px;
+    line-height: 40px;
+    padding : 0 40px 0 10px;
+}
+.introduction-page .menu-about ul{
+    border: 1px solid #e5e5e5;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+.introduction-page .menu-about ul li a{
+    display: block;
+    padding: 10px 15px;
+    color: #666666;
+    font-weight: normal;
+    border-bottom: 1px solid #c3c3c3;
+}
+.introduction-page .menu-about ul li+li a{
+    display: block;
+    padding: 10px 15px;
+    color: #666666;
+    font-weight: normal;
+    border-bottom: 0px;
+}
+
+.introduction-page .breadcrumb{
+    background-color: #ffffff;
+    padding: 0;
+}
+.introduction-page .breadcrumb ul{
+    list-style-type: none;
+    padding: 0;
+}
+.introduction-page .breadcrumb ul li{
+    float: left;
+}
+.introduction-page .breadcrumb ul li + li:before {
+    content: "";
+    font-family: FontAwesome;
+    padding: 2px 10px;
+    color: #aaaaaa;
+}
+.introduction-page .breadcrumb ul  .home a{
+    text-decoration: none;
+    color: #666666;
+}
+.introduction-page .breadcrumb ul  .home a:hover{
+    color: #ff5400;
+}
+.introduction-page  .breadcrumb ul .icon-li strong{
+    color: #70ba28;
+}
+.introduction-page  .about-detail .about-block h1{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 0;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.introduction-page .about-detail .about-block .content p span{
+    font-family: arial, helvetica, sans-serif;
+    line-height: 2.5em;
+}
+.introduction-page .about-detail .about-block .content p span strong{
+    font-size: 16px;
+}
