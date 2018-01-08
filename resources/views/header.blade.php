@@ -26,7 +26,6 @@
         <div class="row">
             <div class="col-md-3 header-left">
                 <div class="logo">
-                    {{--<a href="#"><img src="images/logo.png"></a>--}}
                     <a href="{{route('index')}}"><img src="images/logo.png"></a>
                 </div>
             </div>
@@ -90,7 +89,7 @@
                         <div class="menu-cate-title">
                             <span>
                                 <i class="glyphicon glyphicon-th-list"></i>
-                                <a href="#">Danh mục sản phẩm</a>
+                                <a href="{{route('list-product')}}">Danh mục sản phẩm</a>
                             </span>
                         </div>
                         {{--<ul class="menu-cate-content">--}}
@@ -127,7 +126,6 @@
                             <div id="mobile-menu" class="mobile-menu collapse navbar-collapse">
                                 <ul class="menu nav navbar-nav">
                                     <li class="level0">
-                                        {{--<a href="#"><span>Trang chủ</span></a>--}}
                                         <a href="{{route('index')}}"><span>Trang chủ</span></a>
                                     </li>
                                     <li class="level0">
@@ -137,15 +135,11 @@
                                                 {{--<a href="#"><span></span></a>--}}
                                             {{--</li>--}}
                                         {{--</ul>--}}
+
+                                    <li class="level0">
+                                        <a href="{{route('news')}}">Tin tức</a>
                                     </li>
                                     <li class="level0">
-                                        <a href="#">Tin tức</a>
-                                    </li>
-                                    {{--<li class="level0">--}}
-                                        {{--<a href="#">Giới thiệu</a>--}}
-                                    {{--</li>--}}
-                                    <li class="level0">
-                                        {{--<a href="#">Liên hệ</a>--}}
                                         <a href="{{route('introduction')}}">Giới thiệu</a>
                                     </li>
                                     <li class="level0">

@@ -22,14 +22,9 @@
     <div class="main">
         <div class="container">
             <div class="row">
-                <div class="product-title clearfix">
-                    <div class="col-md-2 title-name">
-                        <span>Sản phẩm</span>
-                    </div>
-                    <div class="col-md-10 hidden-sm hidden-xs separator">
-                        <h3 class="title-separator"></h3>
-                    </div>
-                </div>
+                <h1 class="title clearfix">
+                    <span>Sản phẩm</span>
+                </h1>
             </div>
             <div class="row">
                 <nav class="navbar navbar-default product-filter">

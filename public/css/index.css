@@ -1,21 +1,7 @@
 .adv{
     margin-bottom: 50px;
 }
-.main .product-title .title-name span{
-    text-transform: uppercase;
-    color: #70ba28;
-    font-size: 18px;
-    height: 40px;
-    margin: 0;
-}
-.main .product-title .title-separator{
-    border: 2px solid #333333;
-    line-height: 40px;
-    margin-left: -100px;
-}
-.main .product-title .separator{
-    margin-bottom: 20px;
-}
+
 .main .product-filter{
     background: transparent;
 }
@@ -154,5 +140,27 @@
 .product-block .product-item .right-block .button-more a i:hover{
     background-color: #ff5400;
 }
+.main h1.title{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
 
-/**/
+}
+.main h1.title::before{
+    content: "";
+    position: absolute;
+    border: 2px solid #333333;
+    margin: 5px 0 auto 0;
+    z-index: -1;
+    top: 50%;left: 0;right: 0;bottom: 0;
+    background: #333333 none repeat scroll 0 0;
+    height: 2px;
+    width: 100%;
+}
+.main h1 span{
+    background: #fff;
+    padding: 0 20px 0 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #70ba28;
+}
