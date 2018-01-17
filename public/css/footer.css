@@ -40,6 +40,12 @@
     border:1px solid #70ba28;
     display: inline-block;
 }
+
+@media (max-width: 768px) {
+    .footer-menu .footer-box {
+        margin-top: 0 !important;
+    }
+}
 .footer-menu .footer-box .box-address{
     background-color: #70ba28;
     min-height: 450px;

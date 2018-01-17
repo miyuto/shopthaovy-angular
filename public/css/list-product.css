@@ -1,0 +1,169 @@
+.wrapper{
+    margin: 0;
+    padding: 0;
+}
+.list-product .product-menu h3{
+    background-color: #333333;
+    border-left: 3px solid #70ba28;
+    margin: 0;
+
+}
+.list-product .product-menu h3 span{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 0;
+    padding: 10px;
+    line-height: 40px;
+}
+.list-product .product-menu ul{
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #dddddd;
+}
+.list-product .product-menu ul li{
+    padding: 15px 12px;
+    border-bottom: 1px dashed #dddddd;
+}
+.list-product .product-menu ul li a span{
+    padding-left: 5px;
+}
+.list-product .product-menu ul li a{
+    text-decoration: none;
+}
+.list-product .product-menu ul li a:hover{
+    color: #70ba28;
+}
+.list-product .breadcrumb{
+    background-color: transparent;
+    margin: 0 0 15px;
+    padding: 0;
+}
+.list-product .breadcrumb ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.list-product .breadcrumb ul li{
+    float: left;
+    font-size: 12px;
+}
+.list-product .breadcrumb ul li+li:before{
+    content: "";
+    font-family: FontAwesome;
+    padding: 2px 10px;
+    color: #aaaaaa;
+}
+.list-product .breadcrumb ul .home a{
+    text-decoration: none;
+    color: #666666;
+}
+.list-product .breadcrumb ul .home a:hover {
+    color: #ff5400;
+}
+.list-product .breadcrumb ul .icon-li span{
+    color: #666666;
+}
+.list-product .breadcrumb .icon-li span:hover{
+    color: #ff5400;
+    cursor: pointer;
+}
+.list-product .product-filter{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #aaaaaa;
+}
+.list-product .product-filter .limit{
+    float: left;
+}
+.list-product .product-filter .sort{
+    float: right;
+}
+
+/*.list-product .product-content .breadcrumb{*/
+    /*background-color: #ffffff;*/
+    /*padding: 0;*/
+/*}*/
+/*.list-product .product-content .breadcrumb ul{*/
+    /*list-style-type: none;*/
+    /*padding: 0;*/
+/*}*/
+/*.list-product .product-content .breadcrumb ul li{*/
+    /*float: left;*/
+/*}*/
+/*.list-product .product-content .breadcrumb ul li + li:before {*/
+    /*content: "";*/
+    /*font-family: FontAwesome;*/
+    /*padding: 2px 10px;*/
+    /*color: #aaaaaa;*/
+/*}*/
+/*.list-product .product-content .breadcrumb ul  .home a{*/
+    /*text-decoration: none;*/
+    /*color: #666666;*/
+/*}*/
+/*.list-product .product-content .breadcrumb ul  .home a:hover{*/
+    /*color: #ff5400;*/
+/*}*/
+/*.list-product .product-content  .breadcrumb ul .icon-li strong{*/
+    /*color: #70ba28;*/
+/*}*/
+
+/*.list-product .product-content  h1.title{*/
+    /*position: relative;*/
+    /*!*z-index: 1;*!*/
+    /*!*!*display: inline-block;*!*!*/
+    /*!*!*text-align: center;*!*!*/
+/*}*/
+/*.list-product .product-content h1{*/
+    /*color: #333333;*/
+    /*font-size: 17px;*/
+    /*margin-bottom: 15px;*/
+    /*margin-top: 0;*/
+    /*text-transform: uppercase;*/
+/*}*/
+/*.list-product .product-content  h1::before{*/
+    /*background: #333333 none repeat scroll 0 0;*/
+    /*bottom: 7px;*/
+    /*content: "";*/
+    /*height: 2px;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+/*}*/
+/*.list-product .product-content  h1.title::before{*/
+    /*background: #333333 none repeat scroll 0 0;*/
+    /*bottom: 7px;*/
+    /*content: "";*/
+    /*height: 2px;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+/*}*/
+/*.list-product .product-content  h1 span{*/
+    /*background: #ffffff none repeat scroll 0 0;*/
+    /*color: #70ba28;*/
+    /*display: inline-block;*/
+    /*font-size: 18px;*/
+    /*position: relative;*/
+    /*margin-right: 10px;*/
+    /*padding-right: 10px;*/
+/*}*/
+/*.list-product .product-content  h1.title span{*/
+    /*background: #ffffff none repeat scroll 0 0;*/
+    /*color: #70ba28;*/
+    /*display: inline-block;*/
+    /*font-size: 18px;*/
+    /*position: relative;*/
+    /*margin-right: 10px;*/
+    /*padding-right: 10px;*/
+/*}*/
+/*.wrapper .wrap{*/
+    /*padding: 0;*/
+/*}*/
+/*.list-product .product-content .product-filter{*/
+    /*padding: 10px;*/
+/*}*/
+/*.list-product .product-content .product-filter .limit{*/
+    /*float: left;*/
+/*}*/
+/*.list-product .product-content .product-filter .sort{*/
+    /*float: right;*/
+/*}*/

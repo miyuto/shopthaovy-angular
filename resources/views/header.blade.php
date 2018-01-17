@@ -26,7 +26,8 @@
         <div class="row">
             <div class="col-md-3 header-left">
                 <div class="logo">
-                    <a href="#"><img src="images/logo.png"></a>
+                    {{--<a href="#"><img src="images/logo.png"></a>--}}
+                    <a href="{{route('index')}}"><img src="images/logo.png"></a>
                 </div>
             </div>
             <div class="col-md-9  header-right">
@@ -126,7 +127,8 @@
                             <div id="mobile-menu" class="mobile-menu collapse navbar-collapse">
                                 <ul class="menu nav navbar-nav">
                                     <li class="level0">
-                                        <a href="#"><span>Trang chủ</span></a>
+                                        {{--<a href="#"><span>Trang chủ</span></a>--}}
+                                        <a href="{{route('index')}}"><span>Trang chủ</span></a>
                                     </li>
                                     <li class="level0">
                                         <a href="#">Sản phẩm</a>
@@ -139,11 +141,15 @@
                                     <li class="level0">
                                         <a href="#">Tin tức</a>
                                     </li>
+                                    {{--<li class="level0">--}}
+                                        {{--<a href="#">Giới thiệu</a>--}}
+                                    {{--</li>--}}
                                     <li class="level0">
-                                        <a href="#">Giới thiệu</a>
+                                        {{--<a href="#">Liên hệ</a>--}}
+                                        <a href="{{route('introduction')}}">Giới thiệu</a>
                                     </li>
                                     <li class="level0">
-                                        <a href="#">Liên hệ</a>
+                                        <a href="{{route('contact-us')}}">Liên hệ</a>
                                     </li>
                                 </ul>
                             </div>

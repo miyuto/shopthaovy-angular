@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
+    return view('pages.list-product');
+})->name('index');
+
+Route::get('introduction',function (){
+   return view('pages.introduction');
+})->name('introduction');
+Route::get('contact-us',function (){
     return view('pages.contact-us');
-});
+})->name('contact-us');

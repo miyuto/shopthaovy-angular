@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-md-3"></div>
                     <div class="footer-box col-md-3 hotline col-sm-12 col-xs-12">HOTLINE : 0983807784</div>
-                    <div class="footer-box box-social col-md-3 col-sm-12 col-xs-12">
+                    <div class="footer-box box-social col-md-5 col-sm-12 col-xs-12">
                         <div class="item">
                             <div class="social-item">
                                 <ul>
