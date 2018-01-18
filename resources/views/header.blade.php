@@ -7,14 +7,28 @@
                     <li>Hotline : 0983807784</li>
                 </ul>
             </div>
-            <div class="col-md-5 col-md-offset-3 top-menu hidden-xs hidden-sm">
+            <div class="col-md-6 col-md-offset-2 top-menu hidden-xs hidden-sm">
                 <ul>
                     <li>
-                        <a href="#"><i class="glyphicon glyphicon-pencil"></i>Kiểm tra đơn hàng</a>
+                        <a href="{{route('check-order')}}"><i class="glyphicon glyphicon-pencil"></i>Kiểm tra đơn hàng</a>
                     </li>
-                    <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i>Giỏ hàng</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-log-in"></i>Đăng nhập</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-plus-sign"></i>Đăng ký</a></li>
+                    <li><a href="{{ route('cart') }}"><i class="glyphicon glyphicon-shopping-cart"></i>Giỏ hàng</a></li>
+                    @if(Auth::check())
+                        <li>
+                            @if(Auth::user()->name)
+                                <span>Xin chào {{ Auth::user()->name }}</span>
+                            @else
+                                <span>Xin chào {{ Auth::user()->email }}</span>
+                            @endif
+                        </li>
+                        <li>
+                            <a href="{{route('logout')}}"><i class="glyphicon glyphicon-log-out"></i>Đăng xuất</a>
+                        </li>
+                    @else
+                        <li><a href="{{route('login')}}"><i class="glyphicon glyphicon-log-in"></i>Đăng nhập</a></li>
+                        <li><a href="{{route('register')}}"><i class="glyphicon glyphicon-plus-sign"></i>Đăng ký</a></li>
+                    @endif
+
                 </ul>
             </div>
         </div>
@@ -47,9 +61,9 @@
                     </ul>
                 </div>
                 <div class="cart">
-                    <a href="#">
+                    <a href="{{ route('cart') }}">
                         <i class="fa fa-shopping-bag" style="font-size: 36px;"></i>
-                        <span>    0 sp - 0đ </span>
+                        <span>    {{ $countPrice }} sp - {{ $totalPrice }} đ </span>
                         <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -80,7 +94,7 @@
 
 </div>
 {{--<div class="clearfix"></div>--}}
-<div class="navigation-menu clearfix">　
+<div class="navigation-menu clearfix    ">　
     <div class="container container-fluid">
         <div class="menu-top">
             <div class="row">
@@ -92,32 +106,7 @@
                                 <a href="{{route('list-product')}}">Danh mục sản phẩm</a>
                             </span>
                         </div>
-                        {{--<ul class="menu-cate-content">--}}
-                            {{--<li>--}}
-                                {{--<a href="#">--}}
-                                    {{--<i>Thời trang nam</i>--}}
-                                    {{--<span class="arrow-menu"></span>--}}
-                                {{--</a>--}}
-                            {{--</li>--}}
-                            {{--<li>--}}
-                                {{--<a href="#">--}}
-                                    {{--<i>Thời trang nữ</i>--}}
-                                    {{--<span class="arrow-menu"></span>--}}
-                                {{--</a>--}}
-                            {{--</li>--}}
-                            {{--<li>--}}
-                                {{--<a href="#">--}}
-                                    {{--<i>Mỹ phẩm</i>--}}
-                                    {{--<span class="arrow-menu"></span>--}}
-                                {{--</a>--}}
-                            {{--</li>--}}
-                            {{--<li>--}}
-                                {{--<a href="#">--}}
-                                    {{--<i>Túi xách</i>--}}
-                                    {{--<span class="arrow-menu"></span>--}}
-                                {{--</a>--}}
-                            {{--</li>--}}
-                        {{--</ul>--}}
+                        @yield('sub-menu')
                     </div>
                 </div>
                 <div class="col-md-9">

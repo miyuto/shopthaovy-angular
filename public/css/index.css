@@ -32,6 +32,11 @@
     margin: 0;
     float: left;
 }
+.main .form-control {
+    padding: 0;
+    display: unset;
+    width: auto;
+}
 .main .product-filter .sort{
     float: right;
     margin: 0;
@@ -163,4 +168,35 @@
     text-transform: uppercase;
     font-size: 25px;
     color: #70ba28;
+}
+.main .paginate-page {
+    text-align: center;
+    font-size: 14px !important;
+}
+.main .paginate-page ul li a{
+    margin: 5px;
+}
+.main .paginate-page ul li span{
+    margin: 5px;
+}
+.main .paginate-page ul li a {
+    border: none;
+    color: #333333;
+}
+.main .paginate-page ul li span {
+    border: none;
+}
+.main .paginate-page ul li.active span {
+    color: #ffffff;
+    background-color: #70ba28;
+    border-radius: 5px;
+    cursor: default;
+}
+.main .paginate-page ul li.active span:hover {
+    background-color: #337ab7;
+}
+.main .paginate-page ul li a:hover {
+    color: #FFFFFF;
+    background-color: #70ba28;
+    border-radius: 5px;
 }

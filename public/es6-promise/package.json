@@ -10,7 +10,7 @@
         "spec": ">=3.0.2 <4.0.0",
         "type": "range"
       },
-      "/home/pham.van.son/HocAngular/shopthaovy-angular"
+      "/opt/lampp/htdocs/shopthaovy-angular"
     ]
   ],
   "_from": "es6-promise@>=3.0.2 <4.0.0",
@@ -38,14 +38,13 @@
     "type": "range"
   },
   "_requiredBy": [
-    "#DEV:/",
-    "/zone.js"
+    "/"
   ],
   "_resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-3.3.1.tgz",
   "_shasum": "a08cdde84ccdbf34d027a1451bc91d4bcd28a613",
   "_shrinkwrap": null,
   "_spec": "es6-promise@^3.0.2",
-  "_where": "/home/pham.van.son/HocAngular/shopthaovy-angular",
+  "_where": "/opt/lampp/htdocs/shopthaovy-angular",
   "author": {
     "name": "Yehuda Katz, Tom Dale, Stefan Penner and contributors",
     "url": "Conversion to ES6 API by Jake Archibald"

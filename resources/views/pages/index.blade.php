@@ -1,4 +1,16 @@
 @extends('master')
+@section('sub-menu')
+    <ul class="menu-cate-content">
+        @foreach($categories as $category)
+        <li>
+            <a href="#">
+                <i>{{ $category->name }}</i>
+                <span class="arrow-menu"></span>
+            </a>
+        </li>
+        @endforeach
+    </ul>
+@endsection
 @section('content')
     <div class="banner-content">
         <div class="container">
@@ -6,11 +18,9 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-8 hidden-xs hidden-sm">
                     <div class="w3-content w3-display-container">
-                        <img class="mySlides" src="images/sliders/anh1.png" style="max-width: 100%;max-height: 100%">
-                        <img class="mySlides" src="images/sliders/anh2.png" style="max-width: 100%;max-height: 100%">
-                        <img class="mySlides" src="images/sliders/anh1.png" style="max-width: 100%;max-height: 100%">
-                        <img class="mySlides" src="images/sliders/anh2.png" style="max-width: 100%;max-height: 100%">
-
+                        @foreach($slides as $slide)
+                        <img class="mySlides" src="{{$slide->link_image}}" style="max-width: 100%;max-height: 100%">
+                        @endforeach
                         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(1)">&#10094;</button>
                         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(-1)">&#10095;</button>
                     </div>
@@ -21,256 +31,46 @@
     <div class="adv"></div>
     <div class="main">
         <div class="container">
-            <div class="row">
-                <h1 class="title clearfix">
-                    <span>Sản phẩm</span>
-                </h1>
-            </div>
-            <div class="row">
-                <nav class="navbar navbar-default product-filter">
-                        <ul class="display">
-                            <li>
-                                <a href="#" title="Grid"><i class="fa fa-th-large"></i></a>
-                            </li>
-                            <li><a href="#" title="List"><i class="fa fa-th-list"></i></a></li>
-                        </ul>
-                    <div class="limit">
-                        <span>Sản phẩm/trang</span>
-                        <select id="lblimit" name="lblimit" class="nb_item" style="height: 30px;">
-                            <option value="10" selected>10</option>
-                            <option value="20">20</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                        </select>
-                    </div>
-                    <div class="sort">
-                        <span>Sắp xếp theo</span>
-                        <select class="selectProductSort" style="height: 30px;">
-                            <option value="" selected>Mặc định</option>
-                            <option value="" >Giá tăng dần</option>
-                            <option value="" >Giá giảm dần</option>
-                        </select>
-                    </div>
-                </nav>
-            </div>
-            <div class="row">
-                <div class="product-block product-grid clearfix">
-                    <div class="col-md-3 col-sm-3 col-xs-6 product-item-box">
-                        <div class="product-item product-resize" style="height: 366px">
-                            <div class="image image-resize" style="height: 268px">
-                                <a href="#" title="">
-                                    <img src="images/ao1.jpg">
-                                </a>
-                                <span class="promotion">-45%</span>
-                            </div>
-                            <div class="right-block">
-                                <h2 class="name">
-                                    <a href="#">Áo khoác len lông xù kiểu Hàn Quốc</a>
-                                </h2>
-                                <div class="rating"></div>
-                                <div class="cotentprice clearfix">
-                                    <div class="discountpercent">45%</div>
-                                    <div class="price">
-                                        <span class="price-new">175.000 đ</span>
-                                        <span class="price-old">350.000 đ</span>
-                                    </div>
-                                    <div class="button-more">
-                                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6 product-item-box">
-                        <div class="product-item product-resize" style="height: 366px">
-                            <div class="image image-resize" style="height: 268px">
-                                <a href="#" title="">
-                                    <img src="images/ao1.jpg">
-                                </a>
-                                <span class="promotion">-45%</span>
-                            </div>
-                            <div class="right-block">
-                                <h2 class="name">
-                                    <a href="#">Áo khoác len lông xù kiểu Hàn Quốc</a>
-                                </h2>
-                                <div class="rating"></div>
-                                <div class="cotentprice clearfix">
-                                    <div class="discountpercent">45%</div>
-                                    <div class="price">
-                                        <span class="price-new">175.000 đ</span>
-                                        <span class="price-old">350.000 đ</span>
-                                    </div>
-                                    <div class="button-more">
-                                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6 product-item-box">
-                        <div class="product-item product-resize" style="height: 366px">
-                            <div class="image image-resize" style="height: 268px">
-                                <a href="#" title="">
-                                    <img src="images/ao1.jpg">
-                                </a>
-                                <span class="promotion">-45%</span>
-                            </div>
-                            <div class="right-block">
-                                <h2 class="name">
-                                    <a href="#">Áo khoác len lông xù kiểu Hàn Quốc</a>
-                                </h2>
-                                <div class="rating"></div>
-                                <div class="cotentprice clearfix">
-                                    <div class="discountpercent">45%</div>
-                                    <div class="price">
-                                        <span class="price-new">175.000 đ</span>
-                                        <span class="price-old">350.000 đ</span>
-                                    </div>
-                                    <div class="button-more">
-                                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6 product-item-box">
-                        <div class="product-item product-resize" style="height: 366px">
-                            <div class="image image-resize" style="height: 268px">
-                                <a href="#" title="">
-                                    <img src="images/ao1.jpg">
-                                </a>
-                                <span class="promotion">-45%</span>
-                            </div>
-                            <div class="right-block">
-                                <h2 class="name">
-                                    <a href="#">Áo khoác len lông xù kiểu Hàn Quốc</a>
-                                </h2>
-                                <div class="rating"></div>
-                                <div class="cotentprice clearfix">
-                                    <div class="discountpercent">45%</div>
-                                    <div class="price">
-                                        <span class="price-new">175.000 đ</span>
-                                        <span class="price-old">350.000 đ</span>
-                                    </div>
-                                    <div class="button-more">
-                                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6 product-item-box">
-                        <div class="product-item product-resize" style="height: 366px">
-                            <div class="image image-resize" style="height: 268px">
-                                <a href="#" title="">
-                                    <img src="images/ao1.jpg">
-                                </a>
-                                <span class="promotion">-45%</span>
-                            </div>
-                            <div class="right-block">
-                                <h2 class="name">
-                                    <a href="#">Áo khoác len lông xù kiểu Hàn Quốc</a>
-                                </h2>
-                                <div class="rating"></div>
-                                <div class="cotentprice clearfix">
-                                    <div class="discountpercent">45%</div>
-                                    <div class="price">
-                                        <span class="price-new">175.000 đ</span>
-                                        <span class="price-old">350.000 đ</span>
-                                    </div>
-                                    <div class="button-more">
-                                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6 product-item-box">
-                        <div class="product-item product-resize" style="height: 366px">
-                            <div class="image image-resize" style="height: 268px">
-                                <a href="#" title="">
-                                    <img src="images/ao1.jpg">
-                                </a>
-                                <span class="promotion">-45%</span>
-                            </div>
-                            <div class="right-block">
-                                <h2 class="name">
-                                    <a href="#">Áo khoác len lông xù kiểu Hàn Quốc</a>
-                                </h2>
-                                <div class="rating"></div>
-                                <div class="cotentprice clearfix">
-                                    <div class="discountpercent">45%</div>
-                                    <div class="price">
-                                        <span class="price-new">175.000 đ</span>
-                                        <span class="price-old">350.000 đ</span>
-                                    </div>
-                                    <div class="button-more">
-                                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6 product-item-box">
-                        <div class="product-item product-resize" style="height: 366px">
-                            <div class="image image-resize" style="height: 268px">
-                                <a href="#" title="">
-                                    <img src="images/ao1.jpg">
-                                </a>
-                                <span class="promotion">-45%</span>
-                            </div>
-                            <div class="right-block">
-                                <h2 class="name">
-                                    <a href="#">Áo khoác len lông xù kiểu Hàn Quốc</a>
-                                </h2>
-                                <div class="rating"></div>
-                                <div class="cotentprice clearfix">
-                                    <div class="discountpercent">45%</div>
-                                    <div class="price">
-                                        <span class="price-new">175.000 đ</span>
-                                        <span class="price-old">350.000 đ</span>
-                                    </div>
-                                    <div class="button-more">
-                                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6 product-item-box">
-                        <div class="product-item product-resize" style="height: 366px">
-                            <div class="image image-resize" style="height: 268px">
-                                <a href="#" title="">
-                                    <img src="images/ao1.jpg">
-                                </a>
-                                <span class="promotion">-45%</span>
-                            </div>
-                            <div class="right-block">
-                                <h2 class="name">
-                                    <a href="#">Áo khoác len lông xù kiểu Hàn Quốc</a>
-                                </h2>
-                                <div class="rating"></div>
-                                <div class="cotentprice clearfix">
-                                    <div class="discountpercent">45%</div>
-                                    <div class="price">
-                                        <span class="price-new">175.000 đ</span>
-                                        <span class="price-old">350.000 đ</span>
-                                    </div>
-                                    <div class="button-more">
-                                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+            <form method="" action="">
+                {{ csrf_field()}}
+                <div class="row">
+                    <h1 class="title clearfix">
+                        <span>Sản phẩm</span>
+                    </h1>
                 </div>
-            </div>
-
+                <div class="row">
+                    <nav class="navbar navbar-default product-filter">
+                        <div class="limit">
+                            <span>Sản phẩm/trang</span>
+                            <select id="product_limit_selected" name="product_limit_selected" class="nb_item form-control" style="height: 30px;" >
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>
+                        <div class="sort">
+                            <span>Sắp xếp theo</span>
+                            <select class="selectProductSort form-control"  style="height: 30px;" name="select-price" id="selectProductSort" >
+                                <option value="default" >Mặc định</option>
+                                <option value="asc" >Giá tăng dần</option>
+                                <option value="desc" >Giá giảm dần</option>
+                            </select>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row p_result" id="presult">
+                    @include('pages.presult')
+                </div>
+            </form>
         </div>
 
     </div>
     <script>
+        var limit = '{{ Request::get('select_product_by_limit') }}';
+        if(limit) {
+            $('.nb_item option[value=' + limit +']').attr('selected','selected');
+        }
         var slideIndex = 1;
         showDivs(slideIndex);
 
@@ -288,6 +88,53 @@
             }
             x[slideIndex-1].style.display = "block";
         }
+        $("select[name='product_limit_selected']").change(function(){
+            var selectLimit = $(this).val();
+            var selectSort = $("select[name='select-price']").val();
+            var token = $("input[name='_token']").val();
+            $.ajax({
+                url: "/index",
+                method: 'GET',
+                data: {
+                    select_product_by_limit: selectLimit,
+                    select_sort: selectSort,
+                    _token: token
+                },
+                success: function(data) {
+                    $("#presult").empty();
+                    document.getElementById("presult").innerHTML = data;
+                    if(selectSort === 'default') {
+                        window.history.pushState({"html":data},"", "?select_product_by_limit="+selectLimit+"&page=1");
+                    }else {
+                        window.history.pushState({"html":data},"", "?select_product_by_limit="+selectLimit
+                            +"&select_sort="+selectSort);
+                    }
+                }
+            });
+        });
 
+        $("select[name='select-price']").change(function () {
+            var selectSort = $(this).val();
+            var selectLimit = $("select[name='product_limit_selected']").val();
+            var token = $("input[name='_token']").val();
+            $.ajax({
+               url: "/index",
+                method: 'GET',
+                data: {
+                   select_sort: selectSort,
+                    select_product_by_limit: selectLimit,
+                    _token: token
+                },
+                success: function (data) {
+                    $("#presult").empty();
+                    document.getElementById("presult").innerHTML = data;
+                    if(selectLimit === '8') {
+                        window.history.pushState({"html":data},"", "?select_sort="+selectSort);
+                    }else {
+                        window.history.pushState({"html":data},"", "?select_sort="+selectSort+"&select_product_by_limit="+selectLimit);
+                    }
+                }
+            });
+        });
     </script>
 @endsection

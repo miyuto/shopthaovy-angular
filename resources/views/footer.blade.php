@@ -38,7 +38,7 @@
                             <div class="item">
                                 <div class="clearfix">
                                     <a href="#">
-                                        <img src="images/logo.png">
+                                        <img src="/images/logo.png">
                                     </a>
                                 </div>
                             </div>

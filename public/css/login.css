@@ -1,0 +1,243 @@
+.login-menu h3{
+    background-color: #333333;
+    border-left: 3px solid #70ba28;
+    margin: 0;
+
+}
+.login-menu h3 span{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 0;
+    padding: 10px;
+    line-height: 40px;
+}
+.login-menu ul{
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #dddddd;
+}
+.login-menu ul li{
+    padding: 15px 12px;
+    border-bottom: 1px dashed #dddddd;
+}
+.login-menu ul li a span{
+    padding-left: 5px;
+}
+.login-menu ul li a{
+    text-decoration: none;
+}
+.login-menu ul li a:hover{
+    color: #70ba28;
+}
+
+.login-form .breadcrumb{
+    background-color: transparent;
+    /*margin: 0 0 15px;*/
+    padding: 0;
+    margin: 0;
+}
+.login-form .breadcrumb ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.login-form .breadcrumb ul li{
+    float: left;
+    font-size: 12px;
+}
+.login-form .breadcrumb ul li+li:before{
+    content: "";
+    font-family: FontAwesome;
+    padding: 2px 10px;
+    color: #aaaaaa;
+}
+.login-form .breadcrumb ul .home a{
+    text-decoration: none;
+    color: #666666;
+}
+.login-form .breadcrumb ul .home a:hover {
+    color: #ff5400;
+}
+.login-form .breadcrumb ul .icon-li span{
+    color: #666666;
+}
+.login-form .breadcrumb .icon-li span:hover{
+    color: #ff5400;
+    cursor: pointer;
+}
+
+.login-form h1.title{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+}
+.login-form h1.title::before{
+    content: "";
+    position: absolute;
+    border: 2px solid #333333;
+    margin: 5px 0 auto 0;
+    z-index: -1;
+    top: 50%;left: 0;right: 0;bottom: 0;
+    background: #333333 none repeat scroll 0 0;
+    height: 2px;
+    width: 100%;
+}
+.login-form h1 span{
+    background: #fff;
+    padding: 0 20px 0 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #70ba28;
+}
+
+.login-form .nav{
+    border-radius: 4px;
+}
+
+/* login form css*/
+
+
+/*
+    Note: It is best to use a less version of this file ( see http://css2less.cc
+    For the media queries use @screen-sm-min instead of 768px.
+    For .omb_spanOr use @body-bg instead of white.
+*/
+
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+    line-height: 300%;
+}
+
+.omb_login .omb_socialButtons a {
+    color: white; // In yourUse @body-bg
+opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+    opacity:1;
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+    position: relative;
+    font-size: 1.5em;
+    color: #aaa;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -0.6em;
+    margin-left: -1.5em;
+    background-color: white;
+    width: 3em;
+    text-align: center;
+}
+
+.omb_login .omb_loginForm .input-group.i {
+    width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
+
+.omb_login .omb_loginForm .btn-primary{
+    color: #ffffff;
+    background-color: #70ba28;
+    border-color: #70ba28;
+}
+.omb_login .omb_loginForm .btn-primary:hover{
+    background-color: #0e9d28;
+    border-color: #0e9d28;
+}
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+        margin-top:10px;
+    }
+}
+.omb_login  h3.omb_authTitle a span{
+    text-decoration: underline;
+}
+.omb_login  h3.omb_authTitle span:hover{
+    color: #70ba28;
+}
+.modal .modal-content .modal-header .modal-title{
+    font-weight: 700 !important;
+    font-size: 18px;
+    text-align: center;
+    font-family: HiraKakuPro-W3;
+    text-transform: uppercase;
+}
+.modal .modal-content .modal-header {
+    border-bottom: none;
+}
+.modal .modal-content .form-modal .alert-reset-email {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.modal .modal-content .form-modal {
+    padding: 10px;
+}
+.modal .modal-content .form-modal p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+.modal .modal-content .modal-footer .btn {
+    width: 120px;
+    padding: 8px 20px;
+    border: none;
+    opacity: 1;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.modal .modal-content .modal-footer {
+    border-top: none;
+}
+.modal .modal-content .modal-footer .btn-default {
+    background-color: #e93854 !important;
+    color: #FFFFFF !important;
+}
+.modal .modal-content .modal-footer .btn-primary {
+    background-color: #3bb149 !important;
+    color: #FFFFFF !important;
+}
+input::-webkit-input-placeholder {
+    color: #d8d8d8 !important;
+}
+input::-moz-placeholder {
+    color: #d8d8d8 !important;
+}
+input:-ms-input-placeholder {
+    color: #d8d8d8 !important;
+}
+input:-moz-placeholder {
+    color: #d8d8d8 !important;
+}
+input:-webkit-autofill {
+     -webkit-box-shadow: 0 0 0 30px white inset !important;
+     transition: none;
+}
+

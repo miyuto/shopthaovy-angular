@@ -6,28 +6,28 @@
                 <div class="carousel carousel-showmanymoveone slide" id="carousel123">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="images/kevin.jpg" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="/images/kevin.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="images/lacoste.jpg" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="/images/lacoste.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="images/boss.jpg" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="/images/boss.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="images/levis.jpg" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="/images/levis.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="images/kevin.jpg" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="/images/kevin.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="images/lacoste.jpg" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="/images/lacoste.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="images/boss.jpg" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="/images/boss.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="images/levis.jpg" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="/images/levis.jpg" class="img-responsive"></a></div>
                         </div>
                     </div>
                 </div>
@@ -43,8 +43,8 @@
         // setup your carousels as you normally would using JS
         // or via data attributes according to the documentation
         // https://getbootstrap.com/javascript/#carousel
-        $('#carousel123').carousel({ interval: 2000 });
-        $('#carouselABC').carousel({ interval: 3600 });
+        // $('#carousel123').carousel({ interval: 2000 });
+        // $('#carouselABC').carousel({ interval: 3600 });
     }());
 
     (function(){

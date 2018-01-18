@@ -1,0 +1,80 @@
+.checkorder-page .breadcrumb{
+    background-color: #ffffff;
+    padding: 0;
+}
+.checkorder-page .breadcrumb ul{
+    list-style-type: none;
+    padding: 0;
+}
+.checkorder-page .breadcrumb ul li{
+    float: left;
+}
+.checkorder-page .breadcrumb ul li + li:before {
+    content: "";
+    font-family: FontAwesome;
+    padding: 2px 10px;
+    color: #aaaaaa;
+}
+.checkorder-page  .breadcrumb ul  .home a{
+    text-decoration: none;
+    color: #666666;
+}
+.checkorder-page  .breadcrumb ul  .home a:hover{
+    color: #ff5400;
+}
+.checkorder-page   .breadcrumb ul .icon-li strong{
+    color: #70ba28;
+}
+
+.checkorder-page  h1.title{
+    position: relative;
+    z-index: 1;
+    /*text-align: center;*/
+}
+.checkorder-page  h1::before{
+    border-top: 3px solid #333333;
+    margin: 5px 0 auto 0;
+    position: absolute;
+    top: 50%; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    content: "";
+}
+.checkorder-page  h1 span{
+    background: #fff;
+    padding: 0 20px 0 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #70ba28;
+}
+.checkorder-page .order-tracking-block .order-input {
+    padding: 10px;
+    background-color: #eaeaea;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+.checkorder-page .order-tracking-block .order-input .form-group {
+    display: block;
+    margin-bottom: 0;
+}
+.checkorder-page .order-tracking-block .order-input .form-group input {
+    min-width: 30%;
+    margin-bottom: 0;
+}
+.checkorder-page .order-tracking-block .order-input .form-group label {
+    font-weight: 700;
+    margin-bottom: 5px;
+    max-width: 100%;
+    display: inline-block;
+}
+.checkorder-page .order-tracking-block .order-input .form-group .btn-primary {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ff5400;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 8px;
+}
+.checkorder-page .order-tracking-block .order-input .form-group .btn-primary:hover {
+    background-color: #333333;
+}

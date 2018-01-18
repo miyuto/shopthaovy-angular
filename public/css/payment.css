@@ -1,0 +1,239 @@
+.payment-content .breadcrumb{
+    background-color: #ffffff;
+    padding: 0;
+}
+.payment-content .breadcrumb ul{
+    list-style-type: none;
+    padding: 0;
+}
+.payment-content .breadcrumb ul li{
+    float: left;
+}
+.payment-content .breadcrumb ul li + li:before {
+    content: "";
+    font-family: FontAwesome;
+    padding: 2px 10px;
+    color: #aaaaaa;
+}
+.payment-content  .breadcrumb ul  .home a{
+    text-decoration: none;
+    color: #666666;
+}
+.payment-content  .breadcrumb ul  .home a:hover{
+    color: #ff5400;
+}
+.payment-content   .breadcrumb ul .icon-li strong{
+    color: #70ba28;
+}
+
+.payment-content  h1.title{
+    position: relative;
+    z-index: 1;
+    /*text-align: center;*/
+}
+.payment-content  h1::before{
+    border-top: 3px solid #333333;
+    margin: 5px 0 auto 0;
+    position: absolute;
+    top: 50%; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    content: "";
+}
+.payment-content  h1 span{
+    background: #fff;
+    padding: 0 20px 0 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #70ba28;
+}
+.payment-content  .steps ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+.payment-content  .steps ul li.active {
+    border-bottom-color: #70ba28;
+}
+.payment-content  .steps ul li {
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 2px solid #aaaaaa;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.payment-content  .steps ul li span i {
+    font-size: 20px;
+}
+.payment-content  .steps ul li span {
+    color: #70ab28;
+    display: block;
+    padding: 5px 0;
+}
+.payment-content  .steps li span.step-number {
+    display: block;
+    text-align: center;
+    left: 0;
+    position: absolute;
+    z-index: 9999;
+    font-weight: bold;
+    width: 100%;
+}
+.payment-content  .steps li span.step-number a {
+    color: #ffffff;
+    background-color: #70ab28;
+    padding: 3px 8px;
+    border: 1px solid #aaaaaa;
+    border-radius: 20px;
+}
+.payment-content .payment-block h4 {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #70ab28;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.payment-content .payment-block .payment-step {
+    padding: 0 2px;
+}
+.payment-content .payment-block .step-preview {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    min-height: 580px;
+}
+.payment-content .payment-block .step-preview h2.title {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.payment-content .payment-block .step-preview .form-block .user-login {
+    margin-bottom: 15px;
+}
+.payment-content .payment-block .step-preview .form-block .user-login a {
+    color: #ff5400;
+}
+.payment-content .payment-block .step-preview .form-block .user-login a:first-child {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #aaaaaa;
+}
+.payment-content .payment-block .step-preview  .cart-items {
+    border-bottom: 1px solid #eaeaea;
+    padding: 5px 0;
+}
+.payment-content .payment-block .step-preview  .cart-items:first-child {
+    padding-top: 0;
+}
+.payment-content .payment-block .step-preview  .cart-items .pull-left {
+    float: left;
+    margin-right: 10px;
+}
+.payment-content .payment-block .step-preview  .cart-items .image img {
+    height: 60px;
+    max-width: 100%;
+}
+.payment-content .payment-block .step-preview  .cart-items .product-info .product-name a {
+    color: #333333;
+}
+.payment-content .payment-block .step-preview  .cart-items .product-info .product-name a:hover {
+    color: #70ab28;
+}
+.payment-content .payment-block .step-preview  .cart-items  .price {
+    float: right;
+}
+.payment-content .payment-block .step-preview .cart-info .total-price {
+    border-bottom: 1px solid #eaeaea;
+    padding: 5px 0;
+    font-weight: 600;
+}
+.payment-content .payment-block .step-preview .cart-info .total-price span {
+    float: right;
+}
+.payment-content .payment-block .step-preview .cart-info .shipping-price {
+    border-bottom: 1px solid #eaeaea;
+    padding: 5px 0;
+    font-weight: 600;
+}
+.payment-content .payment-block .step-preview .cart-info .shipping-price span {
+    float: right;
+}
+.payment-content .payment-block .step-preview .cart-info .btn-coupon {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+}
+.payment-content .payment-block .step-preview .cart-info .btn-coupon .btn-primary {
+    width: 100%;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ff5400;
+    border-radius: 4px;
+    border: none;
+}
+.payment-content .payment-block .step-preview .cart-info .btn-coupon .btn-primary:hover {
+    background-color: #333333;
+}
+.payment-content .payment-block .step-preview .cart-info .use-coupon {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+    text-align: right;
+}
+.payment-content .payment-block .step-preview .cart-info .use-coupon input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.payment-content .payment-block .step-preview .cart-info .use-coupon .form-group {
+    margin-bottom: 0;
+}
+.payment-content .payment-block .step-preview .cart-info .use-coupon .form-group .btn {
+    padding: 8px 15px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+}
+.payment-content .payment-block .step-preview .cart-info .use-coupon .form-group .btn-primary {
+    background-color: #ff5400;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+}
+.payment-content .payment-block .step-preview .cart-info .use-coupon .form-group .btn-primary:hover {
+    background-color: #333333;
+}
+.payment-content .payment-block .step-preview .cart-info .total-payment {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+.payment-content .payment-block .step-preview .cart-info .total-payment span {
+    float: right;
+    text-transform: none;
+    color: #70ab28;
+}
+.payment-content .payment-block .step-preview .cart-info .button-submit {
+    padding: 10px 0;
+    text-align: right;
+}
+.payment-content .payment-block .step-preview .cart-info .button-submit .btn-default {
+    background-color: #333333;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 8px 15px;
+}
+.payment-content .payment-block .step-preview .cart-info .button-submit .btn-default:hover {
+    background-color: #ff5400;
+}
+
+

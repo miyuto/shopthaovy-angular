@@ -42,9 +42,13 @@
     cursor: pointer;
     color: white;
     display: block;
+    margin-right: 5px;
 }
 .top-content .top-menu a:hover{
     color: #19a21a;
+}
+.top-content .top-menu a i {
+    padding-right: 5px;
 }
 .header-content {
     /*border: 1px solid red;*/
@@ -147,7 +151,7 @@
     margin-bottom: 20px;
 }
 .navigation-menu .container{
-    margin-top: -22px;
+    margin-top: -17px;
 }
 
 .navigation-menu .menu-cate{
